@@ -2,11 +2,11 @@ package org.example.itmpj3212.model;
 
 import org.springframework.stereotype.Component;
 
-@Component("cat")
-public class Cat extends Animal {
+@Component("dog")
+public class Dog extends Animal{
 
     @Override
     public String toString() {
-        return "Im a Cat";
+        return "I'm a Dog";
     }
 }
