@@ -1,6 +1,6 @@
 package org.example.itmpj3212;
 
-import koschei.config.AppConfig;
+import org.example.itmpj3212.config.AppConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

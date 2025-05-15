@@ -1,6 +1,6 @@
 package org.example.itmpj3212;
 
-import koschei.models.Ocean1;
+import org.example.itmpj3212.models.Ocean1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
