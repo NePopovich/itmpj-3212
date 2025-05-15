@@ -1,6 +1,6 @@
 package org.example.itmpj3212.config;
 
-import hiber.model.User;
+import org.example.itmpj3212.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,7 +19,7 @@ import java.util.Properties;
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
-@ComponentScan(value = "hiber")
+@ComponentScan(value = "org.example.itmpj3212")
 public class AppConfig {
 
    @Autowired

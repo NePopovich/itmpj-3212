@@ -1,6 +1,6 @@
 package org.example.itmpj3212.dao;
 
-import hiber.model.User;
+import org.example.itmpj3212.model.User;
 
 import java.util.List;
 

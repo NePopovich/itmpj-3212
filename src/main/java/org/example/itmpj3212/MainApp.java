@@ -1,8 +1,9 @@
 package org.example.itmpj3212;
 
-import hiber.config.AppConfig;
-import hiber.model.User;
-import hiber.service.UserService;
+
+import org.example.itmpj3212.config.AppConfig;
+import org.example.itmpj3212.model.User;
+import org.example.itmpj3212.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.SQLException;
