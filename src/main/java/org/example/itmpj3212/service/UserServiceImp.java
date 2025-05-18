@@ -2,6 +2,7 @@ package org.example.itmpj3212.service;
 
 
 import org.example.itmpj3212.dao.UserDao;
+import org.example.itmpj3212.model.Car;
 import org.example.itmpj3212.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,6 +26,12 @@ public class UserServiceImp implements UserService {
    @Override
    public List<User> listUsers() {
       return userDao.listUsers();
+   }
+
+   @Transactional
+   @Override
+   public User getUserByCar(String model, int series) {
+      return userDao.getUserByCar(model, series);
    }
 
 }

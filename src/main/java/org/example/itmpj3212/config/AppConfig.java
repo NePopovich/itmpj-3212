@@ -1,5 +1,6 @@
 package org.example.itmpj3212.config;
 
+import org.example.itmpj3212.model.Car;
 import org.example.itmpj3212.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -19,7 +20,7 @@ import java.util.Properties;
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
-@ComponentScan(value = "org.example.itmpj3212")
+@ComponentScan(basePackages = "org.example.itmpj3212")
 public class AppConfig {
 
    @Autowired
@@ -45,7 +46,7 @@ public class AppConfig {
       props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
 
       factoryBean.setHibernateProperties(props);
-      factoryBean.setAnnotatedClasses(User.class);
+      factoryBean.setAnnotatedClasses(User.class, Car.class);
       return factoryBean;
    }
 
